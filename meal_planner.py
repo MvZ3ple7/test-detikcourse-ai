@@ -27,12 +27,12 @@ def ask_gpt3_turbo(message, chat_log=None):
 def main():
     st.title("Rute perjalanan driver")
 
-    # lokasi_keberangkatan = st.text_input(
-    #     "Berangkat darimana? (Misalnya: Sunter, Grogol, PIK)"
-    # )
-    list_lokasi_keberangkatan = st.radio(
-        "Lokasi keberangkatan?", ("Ruko ITC Cempaka Mas (Jakarta Pusat)")
+    lokasi_keberangkatan = st.text_input(
+        "Berangkat darimana? (Misalnya: Sunter, Grogol, PIK)"
     )
+    # list_lokasi_keberangkatan = st.radio(
+    #     "Lokasi keberangkatan?", ("Ruko ITC Cempaka Mas (Jakarta Pusat)")
+    # )
     jumlah_driver = st.number_input(
         "Untuk berapa orang Driver yang akan bertugas hari ini?", min_value=1, max_value=5, step=1
     )
